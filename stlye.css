@@ -39,8 +39,25 @@ img.projects{
     margin-left: 200px;
     margin-top: 120px;
     justify-content: left;
-   
 }
+
+
+@media (max-width: 750px) {
+    img.img-fluid{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    img.projects {
+        margin-left: 150px;
+    }
+  }
+
+@media (max-width: 1050px) {
+    img.projects {
+      display: none;
+    }
+  }
 
 .img-fluid{
     max-width: 350px;
@@ -149,9 +166,7 @@ p.para{
     max-width: 700px;
     font-weight: 180;
     font-size: 20px;
-    margin-right=: 150px;
-   
-    
+    margin-right: 150px;
 }
 
 span.para{

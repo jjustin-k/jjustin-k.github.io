@@ -55,7 +55,7 @@
           const texts = document.querySelector(".parText");
           const parText = "Current third year Software Engineering Student at McMaster University";
           const again = document.querySelector(".parT");
-          const parT = " ";
+          const parT = "Machine Learning Engineer @ TFI International";
          
           function textTypingEffect(element, text, i = 0){
             element.textContent += text[i];
@@ -76,6 +76,18 @@
             }
             setTimeout(() => textTypingEffectfin(element, text, i+1),16);
           }
+
+          function textTypingEffectext(element, text, i = 0){
+            element.textContent += text[i];
+           
+            if(i === text.length - 1){
+          
+            return;
+            }
+            setTimeout(() => textTypingEffectext(element, text, i+1),27);
+          }
+          
+
           textTypingEffect(span, homeText);
           
           const myname = document.querySelector(".name");
@@ -83,7 +95,7 @@
           textTypingEffect(myname, name );
           textTypingEffect(eng, cover);
           textTypingEffectfin(texts, parText);
-          textTypingEffect(again,parT)
+          textTypingEffectext(again,parT)
           
         </script>
           

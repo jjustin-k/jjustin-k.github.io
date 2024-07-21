@@ -1,76 +1,151 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="stlye.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="stlye.css" />
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
     <title>Projects</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary-dark">
-        <div class="container-fluid">
-          <h1 class="nav">JUSTIN KWINECKI</h1>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/projects.html">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/About.html">ABOUT</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="/About.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="/Resume.pdf">RESUME</a>
-            </li>
-          </ul>
-        </div>
+      <div class="container-fluid">
+        <h1 class="nav">JUSTIN KWINECKI</h1>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About.html">ABOUT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/About.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="container-fluid" style="display: flex;" >
-        <img src="images/maze.jpg" class="projects" alt="">
-        <p class="titles">Maze Runner <br>
+    <div class="container-fluid" style="display: flex">
+      <img src="images/cnn.png"  style = "background-color: #ffffff " class="projects" alt="" />
+      <p class="titles">
+        PDF Reader<br />
         <span class="para">
-          A program that can solve any maze by using the Right-Hand Algorithm.  This project was an assignment for my Software Development course.<br><br>
-          Visit the GitHub Repository 
-          <a target="_blank" href="https://github.com/jjustin-k/a1-maze-runner-jjustin-k" style="text-decoration: none; color: #dadada; font-weight: 500;">Here!</a>
+          I created a program that is able to locate and read various text on
+          multiple pdfs of different formats. I used python and opencv for image
+          processing, and trained a Convolutional Neural Network for locating
+          text and identifying characters. This project was done for my 2024
+          Summer Internship as a Machine Learning Engineer.<br /><br />
         </span>
-      </p><br>
-      </div>
-    <br><br>
-      <div class="container-fluid" style="display: flex;" >
-        <img src="images/face.jpg" class="projects" alt="">
-        <p class="titles">Facial-Recognition Program <br>
+      </p>
+      <br />
+    </div>
+    <br /><br />
+    <div class="container-fluid" style="display: flex">
+      <img src="images/drone.png" style = "background-color: #ffffff " class = "projects" alt="" />
+      <p class="titles">
+        Drone Rescue<br />
         <span class="para">
-          A program that recognizes people you know from the pictures you have of them.  There is also an option to add unrecognized people to known people as a new person. <br><br>
-          Visit the GitHub Repository 
-          <a target="_blank" href="https://github.com/jjustin-k/Facial-Recognition/tree/main" style="text-decoration: none; color: #dadada; font-weight: 500;">Here!</a>
+          This program controls a virtual drone that has to locate a remote
+          island and idenitfy safe entry points for rescue missions. This
+          project was an assignment for my Software Development course.<br /><br />
+          Visit the GitHub Repository
+          <a
+            target="_blank"
+            href="https://github.com/2AA4-W24/a2-rescue-mission-team-205"
+            style="text-decoration: none; color: #dadada; font-weight: 500"
+            >Here!</a
+          >
         </span>
-      </p><br>
-      </div>
-    <br><br>
-    <div class="container-fluid" style="display: flex;">
-      <img src="images/Thumbs up.jpg" class="projects" alt="">
-      <p class="titles">Hand-Gesture Recognizer <br>
-      <span class="para">
-        A program that translates certain hand gestures into letters of the alphabet.  This project was done for DeltaHacks Hackathon 2024!<br> <br>Visit the GitHub Repository  
-        <a target="_blank" href="https://github.com/jjustin-k/DeltaHacks-2024" style="text-decoration: none; color: #dadada; font-weight: 500;">Here!</a>
-      </span>
-    </p><br>
+      </p>
+      <br />
     </div>
-    <br><br>
-    <div class="container-fluid" style="display: flex;">
-      <img src="images/password.jpg" class="projects" alt="">
-      <p class="titles">Password-Resilience-Analyzer <br>
-      <span class="para">
-        An algorithm to determine strength of a given password. <br> <br>Visit the GitHub Repository  
-        <a target="_blank" href="https://github.com/jjustin-k/Password-Resilience-Analyzer/tree/main" style="text-decoration: none; color: #dadada; font-weight: 500;">Here!</a>
-      </span>
-    </p><br>
+    <br /><br />
+    <div class="container-fluid" style="display: flex">
+      <img src="images/maze.jpg" class="projects" alt="" />
+      <p class="titles">
+        Maze Runner <br />
+        <span class="para">
+          A program that can solve any maze by using Right-Hand Algorithm. A
+          updated version of this project was created that improved on overall
+          code quality and solves the maze using Dijkstras Algroithm. These
+          projects were an assignment for my Software Development course.<br /><br />
+          Github link to the first version:
+          <a
+            target="_blank"
+            href="https://github.com/jjustin-k/a1-maze-runner-jjustin-k"
+            style="text-decoration: none; color: #dadada; font-weight: 500"
+            >Here!</a
+          ><br />
+          Github link to the updated version:
+          <a
+            target="_blank"
+            href="https://github.com/2AA4-W24/a3-maze-runner-take-two-jjustin-k"
+            style="text-decoration: none; color: #dadada; font-weight: 500"
+            >Here!</a
+          >
+        </span>
+      </p>
+      <br />
     </div>
-</body>
+    <br /><br />
+    <div class="container-fluid" style="display: flex">
+      <img src="images/face.jpg" class="projects" alt="" />
+      <p class="titles">
+        Facial-Recognition Program <br />
+        <span class="para">
+          A program that recognizes people you know from the pictures you have
+          of them. There is also an option to add unrecognized people to known
+          people as a new person. <br /><br />
+          Visit the GitHub Repository
+          <a
+            target="_blank"
+            href="https://github.com/jjustin-k/Facial-Recognition/tree/main"
+            style="text-decoration: none; color: #dadada; font-weight: 500"
+            >Here!</a
+          >
+        </span>
+      </p>
+      <br />
+    </div>
+    <br /><br />
+    <div class="container-fluid" style="display: flex">
+      <img src="images/Thumbs up.jpg" class="projects" alt="" />
+      <p class="titles">
+        Hand-Gesture Recognizer <br />
+        <span class="para">
+          A program that translates certain hand gestures into letters of the
+          alphabet. This project was done for DeltaHacks Hackathon 2024!<br />
+          <br />Visit the GitHub Repository
+          <a
+            target="_blank"
+            href="https://github.com/jjustin-k/DeltaHacks-2024"
+            style="text-decoration: none; color: #dadada; font-weight: 500"
+            >Here!</a
+          >
+        </span>
+      </p>
+      <br />
+    </div>
+    <br /><br />
+    <div class="container-fluid" style="display: flex">
+      <img src="images/password.jpg" class="projects" alt="" />
+      <p class="titles">
+        Password-Resilience-Analyzer <br />
+        <span class="para">
+          An algorithm to determine strength of a given password. <br />
+          <br />Visit the GitHub Repository
+          <a
+            target="_blank"
+            href="https://github.com/jjustin-k/Password-Resilience-Analyzer/tree/main"
+            style="text-decoration: none; color: #dadada; font-weight: 500"
+            >Here!</a
+          >
+        </span>
+      </p>
+      <br />
+    </div>
+  </body>
 </html>

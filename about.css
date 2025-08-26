@@ -1,0 +1,89 @@
+/* About Section */
+.about-section {
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.about-section h1.titles {
+  color: #3dc0b9;
+  font-weight: 150;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-section .para {
+  color: #dadada;
+  font-size: 18px;
+  font-weight: 150;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.about-section .para .conts {
+  color: #dadada;
+  text-decoration: none;
+}
+
+.about-section .para .conts:hover {
+  color: #3dc0b9;
+}
+
+.about-section .para .contacts {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(241deg)
+    brightness(104%) contrast(100%);
+}
+
+.about-section .get-in-touch {
+  color: #3dc0b9;
+  font-weight: 150;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  width: 90%;
+  max-width: 350px;
+  border: 5px solid #3dc0b9;
+  border-radius: 45px;
+  border-width: thick;
+  margin: 1rem auto 2rem;
+  display: block;
+}
+
+/* Contact Links Layout */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #dadada;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #3dc0b9;
+}
+
+.contact-links img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(241deg)
+    brightness(104%) contrast(100%);
+}

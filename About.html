@@ -1,61 +1,72 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Kwinecki's About Page</title>
+    <!-- Use Bootstrap for styling -->
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="stlye.css">
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script> 
-    <title>About Page</title>
-</head>
-<body>
+    <link rel="stylesheet" href="about.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+
+    
+  </head>
+  <body>
+    <!-- Header Section -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary-dark">
-        <div class="container-fluid">
-          <h1 class="nav">JUSTIN KWINECKI</h1>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects.html">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">ABOUT</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link active" href="/About.html">CONTACT</a>
-            </li>
-           
-          </ul>
-        </div>
-      </nav>
-      <div class="container-fluid"><h1 class="titles">ABOUT ME</h1> <img src="images/Guitar.jpg" alt="guitar" class="img-fluid" style="margin-top: 0px;">
-        <p class="para">
-        Hi, my name is Justin Kwinecki, I am a level lll Software Engineering student 
-            at McMaster University.  My passion for problem-solving and learning has led me to pursue 
-            a career in the ever-changing field of technology. 
-            As a software engineer, I am particularly interested in Embedded Systems
-            and Machine Learning and as an individual, I strive for excellence and complexity.  So far throughout my academic career I have a cGPA of 3.9, achieving Deans Honours each year.
-            <br>
-            In my spare time, I am a self-taught guitarist with a passion for classic and indie-rock.  I am also
-            an avid sports fan and have played competitive hockey my whole life.
-            <br><br>
-            <span style="color: #3dc0b9; font-weight: 150; font-size: 30px;">GET IN TOUCH!</span>
-            <br><br>
-            <a class="conts" href="https://www.linkedin.com/in/justin-kwinecki-8a479a255/">
-                <img class ="contacts" src="images/linkedin.png" alt="">Linkedin
-            </a>
-            <br><br>
-            <a class="conts" href="https://github.com/jjustin-k">
-                <img class="contacts" src="images/GitHub.png" alt="">
-                GitHub
-            </a>
-            <br><br>
-            <a class="conts">
-                <img class="contacts" src="images/gmail.png" alt="">
-                jjkwinecki@gmail.com
-            </a>
-          </p>
+      <div class="container-fluid">
+        <h1 class="name-title">JUSTIN KWINECKI</h1>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/About.html">ABOUT</a>
+          </li>
+        </ul>
       </div>
-</body>
+    </nav>
+
+    <!-- About Page Content -->
+    <div class="container-fluid about-section text-center d-flex justify-content-center flex-column align-items-center">
+      <h1 class="titles">ABOUT ME</h1>
+      <p class="para text-start mx-auto">
+        Hi, my name is Justin Kwinecki, I am a level lll Software Engineering
+        student at McMaster University. My passion for problem-solving and
+        learning has led me to pursue a career in the ever-changing field of
+        technology. As a software engineer, I am particularly interested in
+        Embedded Systems and Machine Learning and as an individual, I strive for
+        excellence and complexity. So far throughout my academic career I have a
+        cGPA of 3.9, achieving Deans Honours each year.
+        <br />
+        In my spare time, I am a self-taught guitarist with a passion for
+        classic and indie-rock. I am also an avid sports fan and have played
+        competitive hockey my whole life.
+      </p>
+
+      <span class="get-in-touch">GET IN TOUCH!</span>
+
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/justin-kwinecki-8a479a255/"
+          target="_blank"
+        >
+          <img src="images/linkedin.png" alt="Linkedin" />
+          Linkedin
+        </a>
+        <a href="https://github.com/jjustin-k" target="_blank">
+          <img src="images/GitHub.png" alt="GitHub" />
+          GitHub
+        </a>
+        <a href="mailto:jjkwinecki@gmail.com">
+          <img src="images/gmail.png" alt="Email" />
+          jjkwinecki@gmail.com
+        </a>
+      </div>
+    </div>
+  </body>
 </html>

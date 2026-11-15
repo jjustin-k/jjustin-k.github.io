@@ -1,88 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="stlye.css">
-    <link rel="stylesheet" href="home.css">
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
-    <title>Justin Kwinecki's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Step into Justin Kwinecki’s project arcade. Explore software, computer vision, and algorithm projects, one cabinet at a time.">
+  <title>Justin Kwinecki — The Project Arcade</title>
+  <link rel="icon" href="images/arcade/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="arcade.css">
+  <script src="arcade.js" defer></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary-dark">
-    <div class="container-fluid">
-      <h1 class="name-title">JUSTIN KWINECKI</h1>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects.html">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/About.html">ABOUT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="home d-flex justify-content-center mx-auto">
-      <div class="d-flex flex-column justify-content-center">
-        <span class="homeText"></span>
-        <span class="name"></span>
-        <br>
-        <span class="cover"></span>
-        <span class="parText"></span>
-        <span class="parT"></span>
-        <br>
-        <div class="d-flex text-center mx-auto ">
-          <a href="https://www.linkedin.com/in/justin-kwinecki-8a479a255/" class="px-4"><img class="clickables" src="images/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/jjustin-k" class="px-4"><img class="clickables" src="images/GitHub.png" alt="GitHub"></a>
-        </div>
-      </div>
-    </div>
-    <img class="img-fluid " src="images/IMG_0151.jpg" alt="Justin Kwinecki">
-  </div>
-
-  <script>
-    const span = document.querySelector(".homeText");
-    const homeText = "Hello There, I'm";
-    const eng = document.querySelector(".cover");
-    const cover = "Software Engineering Student";
-    const texts = document.querySelector(".parText");
-    const parText = "Current third year Software Engineering Student at McMaster University";
-    const again = document.querySelector(".parT");
-    const parT = "Software Engineer @ Synopsys";
-    const myname = document.querySelector(".name");
-    const name = "Justin Kwinecki";
-    
-    function textTypingEffect(element, text, i = 0) {
-      if (i < text.length) {
-        element.textContent += text[i];
-        setTimeout(() => textTypingEffect(element, text, i + 1), 50);
-      }
-    }
-    
-    function textTypingEffectfin(element, text, i = 0) {
-      if (i < text.length) {
-        element.textContent += text[i];
-        setTimeout(() => textTypingEffectfin(element, text, i + 1), 16);
-      }
-    }
-    
-    function textTypingEffectext(element, text, i = 0) {
-      if (i < text.length) {
-        element.textContent += text[i];
-        setTimeout(() => textTypingEffectext(element, text, i + 1), 27);
-      }
-    }
-    
-    textTypingEffect(span, homeText);
-    textTypingEffect(myname, name);
-    textTypingEffect(eng, cover);
-    textTypingEffectfin(texts, parText);
-    textTypingEffectext(again, parT);
-  </script>
+  <a class="skip-link" href="#arcade">Skip to projects</a>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Justin Kwinecki home"><span class="brand-icon" aria-hidden="true">J<span>K</span></span><span>JUSTIN KWINECKI<span class="brand-sub">SOFTWARE & SIDE QUESTS</span></span></a>
+    <nav aria-label="Main navigation"><a href="#arcade">THE ARCADE <span>↗</span></a><a href="#player">PLAYER INFO <span>↗</span></a><a href="mailto:jjkwinecki@gmail.com" class="contact-nav">SAY HELLO <span>↗</span></a></nav>
+    <button class="sound-button" id="sound" aria-pressed="false" aria-label="Enable arcade sounds">♪ <span>SOUND OFF</span></button>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> PLAYER ONE HAS ENTERED</p><h1 id="hero-title">SERIOUS CODE.<br><span>PLAYFUL MIND.</span></h1><p class="intro">Hey, I’m Justin. I build software, follow my curiosity,<br class="desktop-break"> and occasionally turn a side quest into a project.</p><a class="start-button" href="#arcade"><span aria-hidden="true">▶</span> EXPLORE THE ARCADE <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-ticket" aria-label="Welcome to Justin’s project arcade"><div class="ticket-top">EST. IN CURIOSITY <span>★</span></div><div class="ticket-art" aria-hidden="true"><span class="pixel-star star-one">✦</span><div class="pixel-invader"><i></i></div><span class="pixel-star star-two">✦</span></div><p>JUST ONE<br>MORE PROJECT.</p><div class="ticket-bottom">ADMIT ONE <span>∞ CREDITS</span></div></div>
+      <div class="hero-bottom"><span>BUILT TO EXPLORE. MADE TO CLICK.</span><span>SCROLL TO SELECT YOUR NEXT ADVENTURE ↓</span></div>
+    </section>
+    <section class="arcade-section" id="arcade" aria-labelledby="arcade-title">
+      <div class="section-heading"><div><p class="eyebrow">RESUME PROJECTS / FEATURED LINEUP</p><h2 id="arcade-title">CHOOSE YOUR MACHINE<span class="accent">.</span></h2></div><p>Start with my latest work.<br>Open a cabinet to look under the hood.</p></div>
+      <div class="arcade-toolbar"><div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="featured" aria-pressed="true">FEATURED <span>03</span></button><button class="filter" data-filter="all" aria-pressed="false">ALL <span>09</span></button><button class="filter" data-filter="vision" aria-pressed="false">AI & VISION</button><button class="filter" data-filter="systems" aria-pressed="false">SYSTEMS</button></div><span class="select-hint"><span class="status-dot"></span> <span id="machine-count" aria-live="polite">3 MACHINES ONLINE</span></span></div>
+      <div class="machine-grid" id="machines"></div>
+      <noscript><p>Enable JavaScript to explore the cabinets, or <a href="https://github.com/jjustin-k">browse my projects on GitHub</a>.</p></noscript>
+      <div class="arcade-bottom"><span>NO COINS NEEDED. JUST CURIOSITY.</span><span>MORE SIDE QUESTS IN PROGRESS <span class="accent">•••</span></span></div>
+    </section>
+    <section class="player-section" id="player" aria-labelledby="player-title"><div class="player-image"><img src="images/image.png" alt="Justin Kwinecki" loading="lazy"><span>PLAYER 01 / JUSTIN K.</span></div><div class="player-copy"><p class="eyebrow">BEHIND THE CONTROLS</p><h2 id="player-title">A LITTLE ABOUT<br>THE PLAYER<span class="accent">.</span></h2><p>Hi, I’m Justin Kwinecki, a Software Engineering student at McMaster University interested in distributed systems, software infrastructure, and AI systems.</p><p>I’ve worked on production systems at Genesys and Synopsys, building software across data engineering, distributed systems, developer tooling, and automation. I enjoy tackling complex problems, understanding how systems work under the hood, and building software that is fast, reliable, and practical.</p><p>Outside of engineering, I’m a self-taught guitarist and lifelong hockey player.</p><div class="player-tags"><span>SOFTWARE</span><span>GUITAR</span><span>HOCKEY</span></div></div></section>
+  </main>
+  <footer><a class="footer-name" href="#">JUSTIN KWINECKI <span>© <span id="year">2026</span></span></a><div><a href="https://github.com/jjustin-k" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/justin-kwinecki-8a479a255/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="#">BACK TO TOP ↑</a></div><span class="footer-note">THANKS FOR PLAYING.</span></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close project details">✕</button><div id="dialog-content"></div></dialog>
 </body>
 </html>
